@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Harrington;
+   
+    scroll-behavior: inherit;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-image: url("p1.jpg");
+    color: #ffffff;
+    padding: 1px;
+    text-align: center;
+    font-family: Papyrus, fantasy;
+    opacity: 0.95;
+  }
+  
+  main {
+    padding: 10px;
+  }
+  section {
+    margin-bottom: 5px;
+    border-bottom: 2px solid #eeff00;
+    padding-bottom: 5px;
+  }
+ 
+  
+  h1, h2 {
+    margin-bottom: 13px;
+  }
+  #logo{
+    margin: 10px 34px;
+    }
+    #logo img{
+        
+      height: 50px;
+      margin: 3px 6px;
+      padding-bottom: 0px; 
+      position: absolute;
+      top: 20px;
+      left: 24px;
+     opacity: 100;
+     z-index: -1;
+     border: 2px solid rgb(255, 255, 255);
+     border-radius: 40px;
+    
+    }
+    /* body */
+    
+    #home{
+      display: flex;
+      flex-direction: row;
+      padding: 3px 100px;
+      justify-content: center;
+      align-items: center;
+      height: 590px;
+     
+
+       background-image: url("bg_scribe.png") ;
+       background-size: cover;
+       background-attachment: fixed;
+       opacity: 0.99;   
+       z-index: -2;
+       
+    }
+    #home::before{
+      content: "";
+      
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: -2;
+      opacity: 0.19;   
+  }
+  .event-details{
+    position:absolute;
+    top: 320px;
+    left: 50px;
+  }
+  
+  .Rule-details{
+    position:absolute;
+    top: 135px;
+    left: 50px;
+  }
+/* */
+  .registration-form{
+    position:absolute;
+    top: 430px;
+    left: 50px;
+  }
+  
+  
+  /* Your previous CSS styles can be used as a base */
+
+/* Opening animation */
+@keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .opening-animation {
+    animation: slideIn 1s ease-out forwards;
+  }
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  .closing-animation {
+    animation: slideUp 1s ease-out forwards;
+  }
+  
+ 
+/* footer section */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+label, input, button{
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background : transparent ;
+  color: #ffffff;
+  border: 2px solid rgb(255, 42, 0);
+  cursor: pointer;
+
+  width: 250px;
+  position: absolute;
+  top: 350px;
+  left: 1125px;
+  font: 30px  serif;
+  display: inline-block;
+  border-radius: 6px;
+    
+    
+  
+    text-transform: uppercase;
+    text-decoration: none;
+   
+    
+   
+    transition: 0.2s;
+}
+
+button:hover {
+  
+  color: #ff0404;
+  letter-spacing: 1.5px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 0.1px;
+  background-image: url("p1.jpg");
+  color: #ffffff;
+  position: absolute;
+  top: 679px;
+  
+  width: 100%;
+  opacity: 0.95;
+}
+.head{
+  color: rgb(255, 74, 176);
+}
+.para{
+  color: rgb(255, 255, 255);
+}
