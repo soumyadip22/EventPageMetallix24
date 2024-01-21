@@ -1,0 +1,153 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Harrington;
+   
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+  
+  header {
+    background-color: #340303;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    font-family: Papyrus, fantasy;
+  }
+  
+  main {
+    padding: 10px;
+  }
+  
+  section {
+    margin-bottom: 5px;
+    border-bottom: 2px solid #eeff00;
+    padding-bottom: 5px;
+  }
+  
+  h1, h2 {
+    margin-bottom: 13px;
+  }
+    /* body */
+    .closing-animation {
+      animation: slideUp 1s ease-out forwards;
+    }
+    #home{
+      display: flex;
+      flex-direction: column;
+      padding: 3px 100px;
+      justify-content: center;
+      align-items: center;
+      height: 1984px;
+      background-image: url("bg_codemet_ph.png");
+
+      background-color: #daf7ff;
+      
+    }
+    #home::before{
+      content: "";
+      
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: -2;
+      opacity: 0.99;   
+  }
+  .event-details{
+    position:absolute;
+    top: 750px;
+    left: 50px;
+    font-size: 30px;
+  }
+ 
+  .Rule-details{
+    position:absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 30px;
+  }
+
+  .registration-form{
+    position:absolute;
+    top: 430px;
+    left: 690px;
+
+  }
+  
+  /* footer section */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+  
+  label, input, button {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background : transparent ;
+    color: #ffffff;
+    border: 2px solid rgb(255, 0, 0);
+    cursor: pointer;
+  
+    width: 190px;
+    position: absolute;
+    top: 1200px;
+    left: 155px;
+    font: 35px  serif;
+    display: inline-block;
+      
+      
+    
+      text-transform: uppercase;
+      text-decoration: none;
+     
+      
+     
+      transition: 0.2s;
+  }
+  
+  button:hover {
+   
+    color: #ff0404;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 0.1px;
+    background-color: #340303;
+    color: #fff;
+    position: absolute;
+    top: 2070px;
+    
+    width: 100%;
+  }
+  /* Opening animation */
+@keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .opening-animation {
+    animation: slideIn 1s ease-out forwards;
+  }
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }

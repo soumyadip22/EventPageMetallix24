@@ -63,10 +63,10 @@ body, html {
       height: 590px;
      
 
-       background-image: url("bg_scribe.png") ;
+       background-image: url("bg_codemet.png") ;
        background-size: cover;
        background-attachment: fixed;
-       opacity: 0.99;   
+       opacity: 0.94;   
        z-index: -2;
        
     }
